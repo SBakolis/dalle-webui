@@ -1,12 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import PromptConfig from "./components/PromptConfig";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-500">Hello world!</h1>
+      <div className="flex flex-row items-center justify-between">
+        <PromptConfig />
+        <div className="bg-default p-4"></div>
+      </div>
     </>
   );
 }
